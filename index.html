@@ -12,16 +12,16 @@
 </head>
 <body>
   <h2>PWA App</h2>
-  <h4>Jokes v3</h4>
+  <h4>Jokes v4</h4>
   <img src="./joke.jpg" alt="">
   <ul id="news-container">
 
   </ul>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
   <script>
     if('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/sw.js')
+        .register('./sw.js')
         .then(() => {
           console.log('Service Worker Registered')
         })
