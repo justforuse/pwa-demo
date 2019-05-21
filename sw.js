@@ -1,10 +1,10 @@
 const cacheName = 'jokes-cache'
 const staticAssets = [
-  '/',
-  '/joke.jpg',
-  '/index.html',
-  '/styles.css',
-  '/index.js'
+  './',
+  './joke.jpg',
+  './index.html',
+  './styles.css',
+  './index.js'
 ]
 
 self.addEventListener('install', async e => {
