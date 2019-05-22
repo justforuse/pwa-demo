@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="PWA Demo with random jokes">
+  <meta name="theme-color" content="#2F3BA2">
+  <title>PWA Jokes</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>PWA App</h2>
+  <h4>Random jokes v5</h4>
+  <img src="./joke.jpg" alt="">
+  <ul id="news-container">
+
+  </ul>
+  <script src="./index.js"></script>
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./sw.js')
+        .then(() => {
+          console.log('Service Worker Registered')
+        })
+    }
+  </script>
+</body>
+</html>
