@@ -1,6 +1,3 @@
-importScripts('/polyfill.js');
-
-
 const cacheName = 'jokes-cache'
 const staticAssets = [
   './',
